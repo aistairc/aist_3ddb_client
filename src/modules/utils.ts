@@ -94,20 +94,9 @@ const setOffsetHeightToTileset = (
   return tileset;
 };
 
-/**
- * 開発環境において産総研の絶対URLを相対URLへ変換 (開発サーバでプロキシするため)
- * @param url
- */
-const normalizeAISTUrl = (url: string) => {
-  return import.meta.env.DEV
-    ? url.replace("https://gsrt.digiarc.aist.go.jp", "")
-    : url;
-};
-
 export {
   GEOID_GEOTIFF_PATH,
   CESIUM_INITIAL_OPTIONS,
   getGeoidHeight,
   setOffsetHeightToTileset,
-  normalizeAISTUrl,
 };
