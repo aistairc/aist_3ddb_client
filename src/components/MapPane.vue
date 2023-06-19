@@ -38,7 +38,6 @@ import "cesium/Build/Cesium/Widgets/widgets.css";
 import type { CesiumLayer } from "@/types";
 import {
   setOffsetHeightToTileset,
-  normalizeAISTUrl,
   CESIUM_INITIAL_OPTIONS,
 } from "@/modules/utils";
 import GsiTerrainProvider from "@/modules/gsiTerrain";
@@ -92,7 +91,7 @@ const add = async (layer: CesiumLayer, doFlyTo = true) => {
   attributions.value.push(layer.properties.attribution);
 
   const instance: Cesium3DTileset = viewer.scene.primitives.add(
-    new Cesium3DTileset({ url: normalizeAISTUrl(layer.properties.url) })
+    new Cesium3DTileset({ url: layer.properties.url })
   );
   await instance.readyPromise;
   if (layer.properties.offsetHeight) {

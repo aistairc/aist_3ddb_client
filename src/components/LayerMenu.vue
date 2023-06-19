@@ -32,7 +32,6 @@ import {
 } from "@heroicons/vue/24/solid";
 import { searchFeatures, SERVICES } from "@/modules/api";
 import {
-  normalizeAISTUrl,
   getGeoidHeight,
   GEOID_GEOTIFF_PATH,
 } from "@/modules/utils";
@@ -119,7 +118,7 @@ const addFeature = async (feat: Feature, doFlyTo = true) => {
       offsetHeight: geoidHeight * -1,
       center,
       name: feat.properties.title,
-      url: normalizeAISTUrl(feat.properties["3dtiles_url"]),
+      url: feat.properties["3dtiles_url"],
       attribution: feat.properties.author,
       tileStyle: { pointSize: 2 },
     },

@@ -24,9 +24,7 @@
 */
 import type { Service, FeatureCollection } from "@/types";
 
-const API_ROOT = import.meta.env.DEV
-  ? "/3ddb_demo"
-  : "https://gsrt.digiarc.aist.go.jp/3ddb_demo";
+const API_ROOT = "https://gsrt.digiarc.aist.go.jp/3ddb_demo";
 
 const API_DATA_DIR = `${API_ROOT}/api/v1/zipdata/`;
 
