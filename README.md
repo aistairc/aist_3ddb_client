@@ -114,7 +114,7 @@ $ npm run build
 
 - 3DDB API
 
-  3DDB API のご利用における免責事項および利用条件は、[こちら](https://github.com/aistairc/aist_3ddb_client/ABOUT_USE_3DDB_API.md) を参照してください。
+  3DDB API のご利用における免責事項および利用条件は、[こちら](https://github.com/aistairc/aist_3ddb_client/blob/main/ABOUT_USE_3DDB_API.md) を参照してください。
 
 - 国土地理院
   - 地理院タイル
@@ -166,7 +166,7 @@ LayerMenu で選択されたレイヤーをカードとして表示するコン�
 
 3DDB API について以下に記します。
 
-3DDB API のご利用における免責事項および利用条件は、[こちら](https://github.com/aistairc/aist_3ddb_client/ABOUT_USE_3DDB_API.md) を参照してください。
+3DDB API のご利用における免責事項および利用条件は、[こちら](https://github.com/aistairc/aist_3ddb_client/blob/main/ABOUT_USE_3DDB_API.md) を参照してください。
 
 ### データ種別取得
 
