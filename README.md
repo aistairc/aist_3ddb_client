@@ -113,6 +113,9 @@ $ npm run build
 当 Web アプリケーションは、以下のデータを用いています。
 
 - 3DDB API
+
+  3DDB API のご利用における免責事項および利用条件は、[こちら](https://github.com/aistairc/aist_3ddb_client/ABOUT_USE_3DDB_API.md) を参照してください。
+
 - 国土地理院
   - 地理院タイル
     - 写真（ https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg ）
@@ -162,6 +165,8 @@ LayerMenu で選択されたレイヤーをカードとして表示するコン�
 ## 3DDB API
 
 3DDB API について以下に記します。
+
+3DDB API のご利用における免責事項および利用条件は、[こちら](https://github.com/aistairc/aist_3ddb_client/ABOUT_USE_3DDB_API.md) を参照してください。
 
 ### データ種別取得
 
