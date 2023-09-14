@@ -158,6 +158,21 @@ defineExpose({ openAboutModal });
                       </div>
                     </div>
                     <div>
+                      <div class="font-bold mt-5 mb-2 text-center">
+                        ソースコード
+                      </div>
+                      <div class="flex flex-col gap-y-2">
+                        <p>GitHubで公開しています: <a
+                              href="https://github.com/aistairc/aist_3ddb_client"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              class="underline"
+                              >aistairc/aist_3ddb_client</a
+                            ></p>
+                            <p>ライセンスは Apache-2.0 です。</p>
+                      </div>
+                    </div>
+                    <div>
                       <div class="font-bold mt-5 mb-2 text-center">開発元</div>
                       <div class="flex flex-col gap-y-2">
                         <p>
