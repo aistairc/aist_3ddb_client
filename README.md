@@ -424,6 +424,22 @@ LayerMenu で選択されたレイヤーをカードとして表示するコン�
 - レスポンス
   - [HTTP レスポンスステータスコード](https://developer.mozilla.org/ja/docs/Web/HTTP/Status) が `200` でない場合はエラーです。 適宜エラー処理を実施してください。
 
+### API 使用例
+
+curl コマンドによる API の使用例を以下に記します。
+
+- 全てのデータセットを検索対象とし、タイトルに「つくば」を含むデータの検索結果の先頭から 5 件を取得します。
+  
+  `curl "https://gsrt.digiarc.aist.go.jp/3ddb_demo/api/v1/services/ALL/features?title=つくば&limit=5"`
+
+- データセット SURFACE を検索対象とし、つくばエクスプレスのつくばセンター駅付近から産総研つくばセンター付近に存在するデータを検索します。
+
+  `curl -G --data-urlencode area='POLYGON((140.09943010728892 36.044114821904756,140.1550024382305 36.044114821904756,140.1550024382305 36.08903579681076,140.09943010728892 36.08903579681076,140.09943010728892 36.044114821904756))' --data minz=0 --data maxz=100 https://gsrt.digiarc.aist.go.jp/3ddb_demo/api/v1/services/SURFACE/features`
+
+- 前項の検索結果に含まれる「産総研つくばセンター中央高解像度ドローン空中撮影」(reg_id 423) のデータをダウンロードします。
+
+  `curl -O "https://gsrt.digiarc.aist.go.jp/3ddb_demo/api/v1/zipdata/423"`
+
 ## ライセンス
 
 Copyright 2023, National Institute of Advanced Industrial Science and Technology (AIST).
